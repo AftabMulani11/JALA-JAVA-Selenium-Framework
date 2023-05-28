@@ -13,7 +13,7 @@ public class BaseTest {
     protected PageActions pageObj;
     public static String URL = "http://magnus.jalatechnologies.com/";
     protected Logger log = Logger.getLogger("devpinoyLogger");
-    @Test
+    @BeforeTest
     public void setUp() {
         System.out.println("Before Method ");
         try {

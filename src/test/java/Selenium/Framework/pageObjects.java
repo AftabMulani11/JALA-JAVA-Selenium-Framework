@@ -28,6 +28,15 @@ public class pageObjects {
     @FindBy(xpath = "//a[normalize-space()='Create']")
     public WebElement create;
 
+    @FindBy(xpath = "//a[normalize-space()='Search']")
+    public WebElement search;
+
+    @FindBy(xpath = "//input[@id='Name']")
+    public WebElement Search_name;
+
+    @FindBy(xpath = "//button[@id='btnSearch']")
+    public WebElement search_user;
+
     @FindBy(xpath = "//input[@id='FirstName']")
     public WebElement first_name;
 
@@ -63,6 +72,28 @@ public class pageObjects {
 
     @FindBy(xpath = "//select[@id='CityId']//option[@value='5']")
     public WebElement pune;
+
+    @FindBy(xpath = "//input[@id='chkSkill_1']")
+    public WebElement skill1;
+
+    @FindBy(xpath = "//input[@id='chkSkill_2']")
+    public WebElement skill2;
+
+    @FindBy(xpath = "//input[@id='chkSkill_3']")
+    public WebElement skill3;
+
+    @FindBy(xpath = "//input[@id='chkSkill_4']")
+    public WebElement skill4;
+
+    @FindBy(xpath = "//input[@id='chkSkill_5']")
+    public WebElement skill5;
+
+    @FindBy(xpath = "//input[@id='chkSkill_6']")
+    public WebElement skill6;
+
+    @FindBy(xpath = "//button[normalize-space()='Save']")
+    public WebElement save;
+
 
 
 }
