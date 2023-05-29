@@ -28,12 +28,23 @@ public class adduser extends BaseTestWithLogin {
             pageObj.click(pageObj.skill4);
             pageObj.click(pageObj.skill5);
             pageObj.click(pageObj.skill6);
-            Thread.sleep(5000);
+            Thread.sleep(2500);
             pageObj.click(pageObj.save);
         }
         catch (Exception e){
             e.printStackTrace();
         }
-
+    }
+    @Test(priority = 2)
+    public void showingResult() throws Exception {
+        Thread.sleep(3500);
+        pageObj.type(pageObj.Search_name, "Aftab");
+        pageObj.click((pageObj.search_user));
+    }
+    @AfterTest
+    public void exit() throws Exception {
+        Thread.sleep(3000);
+        driver.quit();
+        System.out.println("Exciting test with successfull Result");
     }
 }

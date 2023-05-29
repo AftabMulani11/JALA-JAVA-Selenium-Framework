@@ -33,11 +33,12 @@ public class BaseTestWithLogin {
     @Test(priority = 0)
     public void login() throws Exception {
         try {
+            Thread.sleep(1000);
             pageObj.type(pageObj.username, "training@jalaacademy.com");
             pageObj.type(pageObj.password, "jobprogram");
             pageObj.click(pageObj.remember);
             pageObj.click(pageObj.login);
-            Thread.sleep(500);
+            Thread.sleep(1500);
         }
         catch (Exception e)
         {

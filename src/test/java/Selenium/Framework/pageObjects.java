@@ -29,13 +29,19 @@ public class pageObjects {
     public WebElement create;
 
     @FindBy(xpath = "//a[normalize-space()='Search']")
-    public WebElement search;
+    public WebElement search_tab;
 
     @FindBy(xpath = "//input[@id='Name']")
     public WebElement Search_name;
 
     @FindBy(xpath = "//button[@id='btnSearch']")
     public WebElement search_user;
+
+    @FindBy(xpath = "//a[@title='Delete']")
+    public WebElement delete;
+
+    @FindBy(xpath = "//button[normalize-space()='Yes']")
+    public WebElement confirm;
 
     @FindBy(xpath = "//input[@id='FirstName']")
     public WebElement first_name;

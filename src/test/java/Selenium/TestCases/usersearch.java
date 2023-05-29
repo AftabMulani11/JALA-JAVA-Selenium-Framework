@@ -5,13 +5,13 @@ import org.testng.annotations.*;
 
 public class usersearch extends BaseTestWithLogin {
     @Test(priority = 1)
-    public void Search() {
+    public void SearchUser() {
         try {
             log.info("*************** Entering Search Page **************");
             System.out.println("First Test ................");
             pageObj.click(pageObj.Employee);
             Thread.sleep(500);
-            pageObj.click((pageObj.search));
+            pageObj.click((pageObj.search_tab));
             pageObj.type(pageObj.Search_name, "Aftab");
             pageObj.click((pageObj.search_user));
             System.out.println("First Test completed ................");
